@@ -1,0 +1,1140 @@
+<table type = nullclass =  id =  name = null title = >
+<table type = nullclass =  id = P254167283-TAB0 name = null title = >
+<table type = nullclass =  id = P254167283-TAB1 name = null title = >
+<table type = nullclass = ST140 id = OperatorsTable name = null title = >
+<HTML>
+<HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+
+<SCRIPT language=JavaScript>
+	// inside internetEnablement Script tag-----
+	var reqKey = 'SecurityNote';
+	var token = 'E7VU-5JE3-0AV4-NULP-IIZD-40WF-JWPS-MH1S';
+</SCRIPT>
+
+<STYLE>
+    table{
+        cellpadding:0;
+        cellSpacing:0
+    }
+</STYLE>
+<LINK rel=stylesheet type=text/css src="jquery/css/custom-theme/jquery-ui-1.8.2.custom.css"><!-- 5.3 --><!-- LIBS -->
+<SCRIPT type=text/javascript src="/BPS/jquery/js/jquery-1.4.2.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/BPS/jquery/js/jquery.bgiframe-2.1.1.js"></SCRIPT>
+
+<SCRIPT type=text/javascript defer src="/BPS/scripts/pngfix.js"></SCRIPT>
+<!-- ENDLIBS -->
+<SCRIPT>    
+    //piyush    
+    $(document).ready(function(){
+        //piyush for making input on focus
+
+       var extojbs = $("input[type!='checkbox']");       
+        
+        extojbs.addClass('input');
+        extojbs.bind('focus',function(){
+            if(this.type=='text'){
+                this.className = 'input-hover';
+            }           
+        });
+        extojbs.bind('blur',function(){
+            if(this.type=='text'){
+                this.className = 'input';
+            }
+        });
+		/*
+        var extojbs = $("select");
+        extojbs.addClass('input');
+        extojbs.bind('focus',function(){            
+                this.className = 'input-hover';            
+        });
+        extojbs.bind('blur',function(){            
+                this.className = 'input';            
+        });
+		*/
+        var extojbs = $("textarea");
+        extojbs.addClass('textarea');
+           extojbs.bind('focus',function(){
+            if(this.type=='textarea'){
+                this.className = 'textarea-hover';
+            }
+        });
+        extojbs.bind('blur',function(){
+            if(this.type=='textarea'){
+                this.className = 'textarea';
+            }
+        });
+
+        $("input:radio").css('border','0px');
+        $("input:radio").css('background','none');
+
+        var buttons = $(".button");
+        buttons.bind("mouseover",function(){
+            this.className = 'button-hover';
+        });
+        buttons.bind("mouseout",function(){
+            this.className = 'button';
+        });
+    }); 
+</SCRIPT>
+<!-- 2.6 --><LINK rel=stylesheet type=text/css href="/BPS/jquery/css/custom-theme/jquery-ui-1.8.2.custom.css"><!-- LIBS -->
+<SCRIPT type=text/javascript src="/BPS/jquery/js/jquery-1.4.2.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/BPS/jquery/js/jquery-ui-1.8.2.custom.min.js"></SCRIPT>
+<!-- ENDLIBS --><!-- 2.6 -->
+<SCRIPT>
+ var strRefBulkFlag='null';
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="json/json2.js"></SCRIPT>
+<!-- 7.3 -->
+<SCRIPT src="scripts//IwMiddle.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwOnLoadPlugin.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwIPSPlugin.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwTextControlPlugin.js"></SCRIPT>
+<!-- 6.3-->
+<SCRIPT src="scripts//AmountFormat.js"></SCRIPT>
+<!-- Manjiri 10.6 -->
+<SCRIPT language=Javascript src="scripts/IwMultilingualData.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/IwCommonScript.js"></SCRIPT>
+<!-- 8.3 -->
+<SCRIPT>
+var mFieldName = new Array(); //8.3
+var mFieldValue = new Array(); //8.3
+	var arrSectionData = new Array();
+	var strSecTableIds = '';
+	//alert("Start of client side");
+	var arrRefEntity = new Array();//7.9 
+var 	arrRefEntityIds= new Array();//7.9 
+var	arrSysFields = new Array();//7.9 
+var arrSysFieldsIds= new Array();//7.9 
+var seqMndfId;//8.9
+
+// 6.6 Piyush Start // 9.4
+	function disableEscapeAndRefresh(){
+	try{
+			if(window.event.keyCode==27){
+				window.event.returnValue = false;
+				window.event.cancelBubble = false;
+				//alert('Escape Not Allowed.');
+				return false;
+			}
+	}catch(e){
+
+	}
+	}
+	document.attachEvent("onkeydown", disableEscapeAndRefresh);
+	window.attachEvent("onkeydown", disableEscapeAndRefresh);
+	window.document.attachEvent("onkeydown", disableEscapeAndRefresh);
+	// 6.6 Piyush End // 9.4
+
+// 9.6 Starts
+$(document).unbind('keydown').bind('keydown', function (event) {
+    var doPrevent = false;
+    if (event.keyCode === 8) {
+        var d = event.srcElement || event.target;
+        if ((d.tagName.toUpperCase() === 'INPUT' && 
+             (
+                 d.type.toUpperCase() === 'TEXT' ||
+                 d.type.toUpperCase() === 'PASSWORD' || 
+                 d.type.toUpperCase() === 'FILE' || 
+                 d.type.toUpperCase() === 'EMAIL' || 
+                 d.type.toUpperCase() === 'SEARCH' || 
+                 d.type.toUpperCase() === 'DATE' )
+             ) || 
+             d.tagName.toUpperCase() === 'TEXTAREA') {
+            doPrevent = d.readOnly || d.disabled;
+        }
+        else {
+            doPrevent = true;
+        }
+    }
+
+    if (doPrevent) {
+        event.preventDefault();
+    }
+});
+// 9.6 Ends
+
+</SCRIPT>
+
+<SCRIPT>
+					arrRefEntity['0'] = 'ECLB';
+					arrRefEntityIds['0']='ECLB';
+				</SCRIPT>
+
+<SCRIPT>
+					arrRefEntity['1'] = '1';
+					arrRefEntityIds['1']='ECLB';
+				</SCRIPT>
+
+<SCRIPT>
+					arrRefEntity['2'] = 'EC';
+					arrRefEntityIds['2']='EC';
+				</SCRIPT>
+
+<SCRIPT>
+					arrRefEntity['3'] = 'ECL';
+					arrRefEntityIds['3']='ECL';
+				</SCRIPT>
+<LINK rel=stylesheet type=text/css href="scripts/IntellectFlowApp.css"><LINK rel=stylesheet type=text/css href="scripts/form.css"><!-- 2.6 --><LINK rel=stylesheet type=text/css href="scripts/fixHeader.css"><!--3.3-->
+<SCRIPT type=text/javascript src="scripts/fixHeader.js"></SCRIPT>
+<!--3.3-->
+<SCRIPT type=text/javascript src="scripts/jquery-ui-timepicker-addon.js"></SCRIPT>
+<!--5.1-->
+<SCRIPT language=Javascript src="scripts/payments/PtJsConstants.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/payments/PT_CommonFunction.js"></SCRIPT>
+<LINK rel=stylesheet type=text/css href="scripts/DateFieldTime.css"><!--5.1-->
+<SCRIPT>
+//7.9
+var lEntityFldCde = 'DFD_SYS_ENTITY';
+var lCountryFldCde =  'DFD_SYS_COUNTRY';
+var lLocationFldCde =  'DFD_SYS_LOCATION';
+var lBranchFldCde =  'DFD_SYS_BRANCH';
+//7.9
+	 //3.3 begins
+    function InitFixHeader(){
+		//$('.fullScreenTable').css({'height': '100px'});
+		//$('.fullScreenTable').fixedHeaderTable({footer:true, autoResize:true, fixCol1:true});	 
+	}
+	/* commented on ver 5.4
+	$(document).ready(function() {	
+		//InitFixHeader();	
+		
+		if(gridFlag=="Y")
+		{
+			loadPaging();
+		}
+	});
+	*/
+     //3.3 ends
+	var popUpFlag = "N"; // 7.5
+    var intDoctypeDocrefMapping = 0;
+    var docInfoCount = 0;
+    var Mode = '';
+    //start 1.3
+    var docrefid='';
+    var documentid='';
+    var documentorder='';
+    var strdocrefMapping='';
+    //end 1.3
+    var strReqType= 'RefEntity';//3.1
+	//alert(strReqType);
+    var radiovalue='';
+    var checkboxvalue='';
+    var radiocapvalue = '';
+    var checkboxcapvalue = '';
+    var gridFlag="N";
+    var GridIds="";
+    //Start 1.8
+    var currencyName = '';
+    var currencyValue = '';
+    var currencyExponent = '';
+    //End 1.8
+	var strCopyFrom = 'null';//9.3
+    //js split
+    if(parent.arrPluginDetails.length>0)
+    {
+        var objHead = document.getElementsByTagName("HEAD")[0];
+        var objScript = document.createElement("script");
+        objScript.src= 'scripts//IwPlugin3.js';
+        objHead.appendChild(objScript);
+    }
+    //js split
+</SCRIPT>
+
+<SCRIPT src="scripts//IwPlugin3.js"></SCRIPT>
+<!--<SCRIPT src="scripts//IwValidations1.js"></SCRIPT>-->
+<SCRIPT src="scripts//IwValidations2.js"></SCRIPT>
+<!-- <SCRIPT src="scripts//IwMiddle.js"></SCRIPT> -->
+<SCRIPT src="scripts//IwBottom3.js"></SCRIPT>
+<!--<SCRIPT src="scripts//IwCalender.js"></SCRIPT>--><!--<SCRIPT src="scripts//IwDatePopup.js"></SCRIPT>-->
+<SCRIPT src="scripts//IwCalendarLayer.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwDateValidation.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwAppImageDataMapping.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwAppFetchKey.js"></SCRIPT>
+<!-- 2.2 -->
+<SCRIPT language=Javascript src="scripts//IwGridUtil.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/IwCustomfunctions.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/IwCommonScript.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/IwGridFilter.js"></SCRIPT>
+<!--4.5--><!-- change for showcalendar -->
+<SCRIPT type=text/javascript src="scripts/WFJSConstants.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/WFCalendarLayer.js"></SCRIPT>
+
+<SCRIPT src="scripts/WFDateUtil.js"></SCRIPT>
+
+<SCRIPT src="scripts/WFDefault.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/WFJSConstants.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwDatePopup.js"></SCRIPT>
+
+<SCRIPT language=Javascript src="scripts/WFCalendarFun.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwConditionSH.js"></SCRIPT>
+<!-- For Conditional Show/Hide Added by prem-->
+<SCRIPT src="scripts//RuleSetAPI.js"></SCRIPT>
+<!-- For Conditional Show/Hide Added by SAN--><!--<script type="text/javascript" src="scripts/WFDatePopup.js"></script>--><!-- change for showcalendar -->
+<SCRIPT>
+//cal1=new CalendarBox('cal1'); cal1.setPopup(true);
+//code change for showcalendar
+//var sourceCode ='CARDSource';
+//BMO
+var strGridData = "";
+//4.6 starts
+//getDataFromVigil changed to updateGridData
+function updateGridData(strGridId,strGridData,parentArray)	//4.9 added a 3rd param
+{
+   //alert('parent ' + parentArray);
+    for(var grdcount=0;grdcount<parentArray[1].length;grdcount++)
+    {
+        if(parentArray[1][grdcount][0] == strGridId)
+        {
+			var newRowCount =0;
+			var seqNo = 0; // 5.0
+			if(strGridData!=undefined && strGridData!=null && strGridData.length == 0) {
+				 parentArray[1][grdcount][8] = new Array();
+				  parentArray[1][grdcount][17] = new Array(); //ver 4.8 
+			} else{
+		    	var existingRowData = parentArray[1][grdcount][8];
+				 if(existingRowData && existingRowData.length> 0) {
+				    newRowCount= existingRowData.length;
+				}
+			parentArray[1][grdcount][20] = true; // 7.4 Grid Status
+            for(var rowcount=0;rowcount<strGridData.length;rowcount++)
+            {
+				if(parentArray[1][grdcount][8] == undefined || parentArray[1][grdcount][8] == null) {
+					parentArray[1][grdcount][8] = new Array();
+					parentArray[1][grdcount][17] = new Array(); //ver 4.8
+					if(strGridId.substring(0,1) == 'P') // 6.2
+					parentArray[1][grdcount][19] = new Array(); // 5.6
+				}
+                parentArray[1][grdcount][8][newRowCount] = new Array();
+				// 5.0 starts
+				if(parentArray[1][grdcount][17].length > 0)
+					seqNo = parentArray[1][grdcount][17][parentArray[1][grdcount][17].length-1];
+				parentArray[1][grdcount][17][parentArray[1][grdcount][17].length] = ++seqNo;
+				if(strGridId.substring(0,1) == 'P') // 6.2
+				parentArray[1][grdcount][19].push("Add"); // 5.6
+				// 5.0 ends
+				//parentArray[1][grdcount][17].push(newRowCount+1); //ver 4.8 // 5.0 commented
+				//alert('parentArray[1][grdcount][7][0] = '+ parentArray[1][grdcount][7][0]);
+                for(var colCounter=0;colCounter<parentArray[1][grdcount][7][0].length;colCounter++)
+                {
+                    var val = strGridData[rowcount][colCounter];
+                    if(val==null || val=='undefined'||val==undefined)
+                        val = '';
+                    /*if(val!=null && val!='undefined')
+                    {
+                        val = val.replace(/\,/gi,"");
+                        val = val.replace(/\;/gi,"");
+                    }*/
+                    //parentArray[1][grdcount][8][rowcount][colCounter] = strGridData[rowcount][colCounter];
+                    parentArray[1][grdcount][8][newRowCount][colCounter] = val;
+                }
+				newRowCount++;
+            }
+			}
+			break;
+        }		 
+    }
+}
+//4.6 ends
+//BMO
+//2.6 begin
+var dtOldFormatArray = ['dd/mm/yyyy','mm/dd/yyyy','yyyy/mm/dd','dd-mm-yyyy','mm-dd-yyyy','yyyy-mm-dd','dd-mm-yy','mm-dd-yy','yy-mm-dd','dd/mm/yy','mm/dd/yy','yy/mm/dd','dd-mmm-yy','dd-mon-yy','dd-mmm-yy','dd-mon-yy']; // 2.8
+var dtjQueryFormatArray = ['dd/mm/yy','mm/dd/yy','yy/mm/dd','dd-mm-yy','mm-dd-yy','yy-mm-dd','dd-mm-y','mm-dd-y','y-mm-dd','dd/mm/y','mm/dd/y','y/mm/dd','dd-M-y','dd-M-y','dd-M-y','dd-M-y']; // 2.8
+//2.6 end
+var sourceCode ='null';//1.7 //7.6
+var UserId ='BCCMKR1';//1.7
+var arrHoliday='';//6.7 start
+var Weekends='';
+function noWeekendsOrHolidays(date) 
+{
+        for (i = 0; i < Weekends.length; i++) 
+        {
+            if(date.getDay() == (parseInt(Weekends[i]))-1)
+            {
+                return [false, ''];
+            }
+        }
+        for (i = 0; i < arrHoliday.length; i++) 
+        {
+           var dt=new Date(arrHoliday[i]);
+           if (date.getMonth() == dt.getMonth() && date.getDate() == dt.getDate() && date.getYear() == dt.getYear() ) {
+                return [false, ''];
+            }
+        }
+        return [true, ''];
+ 
+}//6.7 end
+// 9.7 Starts
+var actualWindowSize = "15%,80%,25%,*,*,*"; //Actual Window Frame size
+var actualWindowSize_MEFrame = "30%,70%,0%";
+var maximizeWindowSize = "5%,80%,25%,*,*,*"; // Maximized Size for MainFrame
+var maximizeWindowSize_MEFrame = "70%,10%,10%";
+var windowSizeChangedFlag = false;
+var lastTableSize = "";
+var xwidth = "";
+function pageWidth() {
+	return window.innerWidth != null? window.innerWidth: document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth:document.body != null? document.body.clientWidth:null;
+}
+
+function maximizeWindow()
+{
+	if(lastTableSize == '')
+	{
+		xwidth = pageWidth();
+	}
+
+	if(!windowSizeChangedFlag){
+		var parentFrame = parent.document.getElementById('MainFrame');
+		if(parentFrame){
+			
+			parent.document.getElementById('MainFrame').setAttribute('rows',maximizeWindowSize);
+			parent.parent.document.getElementById('MainEntityFrame').setAttribute('rows',maximizeWindowSize_MEFrame);
+			windowSizeChangedFlag = true;
+			
+			var inputElements = document.getElementsByTagName("TABLE");			
+			
+			if(inputElements != null && inputElements.length > 0){
+				for(var j = 0; j<inputElements.length;j++){
+					if(inputElements[j].id)	{
+						document.getElementById(inputElements[j].id).width = xwidth;
+					}					
+				}
+			}
+
+			var parentInputElements = parent.IwBottomFrame.document.getElementsByTagName("TABLE");
+			if(parentInputElements != null && parentInputElements.length > 0){
+				for(var j = 0; j<parentInputElements.length;j++){
+					if(parentInputElements[j].id){
+						parent.IwBottomFrame.document.getElementById(parentInputElements[j].id).width = xwidth;
+						lastTableSize = xwidth;
+					}					
+				}
+			}
+
+		}
+	}	
+}
+
+function restoreWindowSize()
+{	
+	if(windowSizeChangedFlag){
+		var parentFrame = parent.document.getElementById('MainFrame');
+		var parentFrame_MEFrame = parent.parent.document.getElementById('MainEntityFrame');
+		if(parentFrame && parentFrame_MEFrame){
+			parentFrame.setAttribute('rows',actualWindowSize);			
+			parent.parent.document.getElementById('MainEntityFrame').setAttribute('rows',actualWindowSize_MEFrame);			
+
+			windowSizeChangedFlag = false;
+		}
+	}
+}
+//9.7 Ends
+function openCalendar(textelement,numX,numY,type,dateFormat,timeFormat,m_BusinessDay_Flag,keyCheck,event,obj,min_Date,max_Date)
+{
+
+//5.1
+		var todaysDate=new Date().format(dateFormat);//10.5
+		var dateFormat2 = dateFormat; // 10.5
+		var	vFieldObject =getFieldObject(textelement);
+		var pEntityName='USER';//6.7 start
+		
+		var vUrl = JS_AJAX_URL + 'HOLIDAYS' + JS_AMPERSAND + JS_CODE + JS_EQUAL + UserId + JS_AMPERSAND + JS_ENTITYNAME + JS_EQUAL + pEntityName;
+		
+		/* For Source code
+		pEntityName='SOURCE';
+		var vUrl = JS_AJAX_URL + 'HOLIDAYS' + JS_AMPERSAND + JS_CODE + JS_EQUAL + sourceCode + JS_AMPERSAND + JS_ENTITYNAME + JS_EQUAL + pEntityName;
+		*/
+
+		// 9.2 starts
+		if(document.getElementById(textelement) && document.getElementById(textelement).disabled){
+			return;
+		}
+		// 9.2 ends
+		
+		// 10.3 starts
+		if(textelement.indexOf('-Range') != -1) {
+			var dateIdArr = textelement.split("-");
+			var dateId = dateIdArr[0] + "-" + dateIdArr[1];
+			var dateObj = document.getElementById(dateId);
+			if(dateObj)
+				min_Date = dateObj.value; 
+		}
+		// 10.3 ends
+
+		if(m_BusinessDay_Flag=='Y'){
+				$.ajax({
+					   url: vUrl,
+					   dataType: "text",
+					   cache : false,
+						async: false,
+					   success: function(data){
+						 //alert("data "+data);  //---------09/24/2012,09/29/2012@@3,4,5---
+						if (data!=''&& data!=null && data!=undefined && data!='undefined')  
+						{
+							data = data.split("@@");
+							arrHoliday=data[0].split(",");
+							if(data.length>1)
+							{
+								var temp=data[1].split("$$");
+								Weekends=temp[0].split(",");
+								temp=temp[1].split(",");
+								if(min_Date=='01/01/1901' && max_Date=='31/12/2099')
+								{	//Range not defined for datafield
+											min_Date=temp[0];
+											max_Date=temp[1];										
+								}
+							}
+						}
+						//alert("Weekends="+Weekends+" && arrHoliday "+arrHoliday);
+					}
+					
+				});//6.7 end 
+		}
+		/*
+		if(vFieldObject.m_fromDate=="")
+		{
+			min_Date=  new Date(2000, 01, 01)
+		}
+		else{
+					min_Date=  vFieldObject.m_fromDate;
+		}
+		if(vFieldObject.m_toDate=="")
+		{
+			max_Date=  new Date(2099, 12, 31)
+			
+		}
+		else{
+					max_Date=  vFieldObject.m_toDate;
+		}
+*/ // commented by 6.7
+		//alert(min_Date,max_Date)
+//5.1
+       // var mjQueryDtFormat = 'dd/mm/yy';
+	    //var mjQueryDtFormat = 'mm/dd/yy';
+		
+		//Start 5.7
+		if(dateFormat.indexOf('yyyy') != -1)
+		{
+			dateFormat = dateFormat.replace("yyyy","yy")
+		}
+		else if(dateFormat.indexOf('yy') != -1)
+		{
+			dateFormat = dateFormat.replace("yy","y")
+		}
+		
+
+
+		var mjQueryDtFormat = dateFormat;
+		//End 5.7
+        var dtObj = $("#" + textelement);
+        var isDtReadOnly = dtObj.attr('readonly');
+        //alert(dtObj.attr('disabled'));
+        //alert(dtObj.attr('readonly'));
+        if(isDtReadOnly ==false){
+        var mIndex= dtOldFormatArray.searchIndex(mjQueryDtFormat);
+		
+      //  if(mIndex>=0)
+        //{mjQueryDtFormat=dtjQueryFormatArray[mIndex]}
+		
+		//10.2 Starts
+		if(mjQueryDtFormat.indexOf('MM') > -1)
+		{
+			mjQueryDtFormat = mjQueryDtFormat.toLowerCase();
+		}
+		//10.2 Ends
+
+        var dt;
+		//10.5 starts
+		var toDate;
+		if(document.getElementById(textelement+"-Range"))
+			toDate = document.getElementById(textelement+"-Range");//10.5 ends
+		if(type=="DATE"){//5.1
+        $(function() {
+        dt = $("#" + textelement).datepicker({
+                    dateFormat:mjQueryDtFormat,
+                    //autoSize:true,
+                    changeYear:true,
+                    changeMonth:true,
+					yearRange: "-100:+100",		//9.5 
+					onClose:function(){restoreWindowSize();
+						// 10.5 starts
+						if(strReqType == 'Enquiry' && toDate){		
+							var strFromDate = document.getElementById(textelement).value;
+							var fromDate = convertDate(dateFormat2, strFromDate)
+							var currentDate = new Date();
+							
+							if(fromDate.getTime() >= currentDate.getTime())
+								toDate.value = '';
+							else
+								toDate.value=todaysDate;
+						}//10.5 ends
+
+					},//9.8
+                    //2.9 start
+                    minDate:min_Date,
+                    maxDate:max_Date,
+					beforeShowDay: noWeekendsOrHolidays //6.7
+                    //2.9 end
+                });
+    });
+        //dt.show();
+        $("#" + textelement).datepicker( "show" )
+    }
+	if(type=="DATE TIME"){
+			
+			//	alert(timeFormat);
+			var tmpampm=false;
+			var tmpsec=false;
+			var tmptimeFormat;
+		
+			timeFormat=timeFormat.replace("mi","mm");
+			if(timeFormat.search("ss")!= -1)
+			{
+			   tmpsec=true;
+			}
+			if(timeFormat.search("am")!= -1)
+			{
+			   timeFormat=timeFormat.replace("am","TT");
+			}
+  		//	alert(dateFormat);
+			if(dateFormat.search("yy")!=1)
+			{
+					if(dateFormat.search("yyyy")!=1){
+						dateFormat=dateFormat.replace("yyyy","yy");
+					}
+					else{
+						dateFormat=dateFormat.replace("yy","y");
+					}
+			}
+			dt= $("#" + textelement).datetimepicker({
+			ampm: true						,
+			dateFormat: dateFormat			,
+			timeFormat:timeFormat		 ,
+			onClose:function(){restoreWindowSize();},//9.8
+			minDate: min_Date,//new Date(2010, 11, 20, 8, 30),
+			
+  		    maxDate: max_Date,//new Date(2010, 11, 31, 17, 30),
+			showSecond: false,
+			beforeShowDay: noWeekendsOrHolidays //6.7
+			
+		//	onSelect: function(dateText, inst){
+//			if(window.console)
+//				console.log(dateText);
+			//}
+		});			  
+//4.5 Ends
+		
+		$("#" + textelement).datetimepicker( "show")
+				
+//				 var arrId = intId.split(',');
+		}
+    }//5.1
+         /*
+    cal1 = new CalendarBox('cal1',sourceCode,m_BusinessDay_Flag); //Version 1.7 -Business Day changes
+    cal1.setPopup(true);
+    cal1.setDateFormat(dateFormat); //Version 1.7 -Business Day changes
+    cal1.setPopup(1);
+    cal1.showCalendar(textelement,event,sourceCode,'SOURCE',type, dateFormat,timeFormat , keyCheck, 'http://10.10.7.83:20051/Workflow/');
+    //cal1.showCalendar(textelement,event,sourceCode,'SOURCE',type,'http://10.10.7.83:20051/Workflow/',keyCheck); //Modified signature for Version 1.7 -Business Day changes
+        */
+
+	//maximizeWindow(); //Commented on 9.8
+	//9.8 Starts
+	
+	if(strReqType == 'RefEntitySearch'){
+		maximizeWindow();
+	}
+	//9.8 Ends
+}
+//code change for showcalendar
+//2.9
+/*
+function validateDate(min_date,max_date,dateFormat,txtField,flag) //3.5
+{
+    if(txtField.value!="")
+    {
+        var dStartIndex = dateFormat.indexOf("d");
+        var dEndIndex = dateFormat.lastIndexOf("d");
+        var txtdays = txtField.value.substring(dStartIndex,dEndIndex+1);
+        var mStartIndex = dateFormat.indexOf("m");
+        var mEndIndex = dateFormat.lastIndexOf("m");
+        var txtmonth = txtField.value.substring(mStartIndex,mEndIndex+1);
+        var yStartIndex = dateFormat.indexOf("y");
+        var yEndIndex = dateFormat.lastIndexOf("y");
+        var txtyear = txtField.value.substring(yStartIndex,yEndIndex+1);
+        //alert("txt : "+txtdays+"/"+txtmonth+"/"+txtyear)
+        //alert("min_date :"+min_date);
+        //alert("max_date "+max_date);
+        //
+        var min_days = min_date.substring(dStartIndex,dEndIndex+1);
+        var min_month = min_date.substring(mStartIndex,mEndIndex+1);
+        var min_year = min_date.substring(yStartIndex,yEndIndex+1);
+        //alert("min : "+min_days+"/"+min_month+"/"+min_year)
+        //
+        var max_days = max_date.substring(dStartIndex,dEndIndex+1);
+        var max_month = max_date.substring(mStartIndex,mEndIndex+1);
+        var max_year = max_date.substring(yStartIndex,yEndIndex+1);
+        //alert("max : "+max_days+"/"+max_month+"/"+max_year)
+        //
+        var txt_Date = new Date(txtyear,txtmonth,txtdays);
+        var minDate = new Date(min_year,min_month,min_days);
+        var maxDate = new Date(max_year,max_month,max_days);
+        if(!(txt_Date>=minDate && txt_Date<=maxDate))
+        {
+			if(flag) //3.5
+			{
+				return false;
+			}
+            alert("Date entered should be between "+min_date+" and "+max_date);
+        }
+		else //3.5
+		{
+			return true;
+		}
+    }
+}
+*/
+function validateDate(min_date,max_date,dateFormat,textelement,txtField,flag) //3.5//4/8
+{
+
+    if(txtField.value!="")
+    {
+//5.1 starts
+		var	vFieldObject =getFieldObject(textelement);
+		min_Date=  vFieldObject.m_fromDate;
+		max_Date=  vFieldObject.m_toDate;
+//5.1 Ends
+        var dStartIndex = dateFormat.indexOf("d");
+        var dEndIndex = dateFormat.lastIndexOf("d");
+        var txtdays = txtField.value.substring(dStartIndex,dEndIndex+1);
+        //var mStartIndex = dateFormat.indexOf("m"); 	// Commented on 10.3
+        //var mEndIndex = dateFormat.lastIndexOf("m");	// Commented on 10.3
+		
+		var mStartIndex = dateFormat.indexOf("M"); // 10.3
+        var mEndIndex = dateFormat.lastIndexOf("M"); // 10.3
+		
+        var txtmonth = txtField.value.substring(mStartIndex,mEndIndex+1);
+        var yStartIndex = dateFormat.indexOf("y");
+        var yEndIndex = dateFormat.lastIndexOf("y");
+        var txtyear = txtField.value.substring(yStartIndex,yEndIndex+1);
+        //alert("txt : "+txtdays+"/"+txtmonth+"/"+txtyear)
+        //alert("min_date :"+min_date);
+        //alert("max_date "+max_date);
+        //
+        var min_days = min_date.substring(dStartIndex,dEndIndex+1);
+        var min_month = min_date.substring(mStartIndex,mEndIndex+1);
+        var min_year = min_date.substring(yStartIndex,yEndIndex+1);
+        //alert("min : "+min_days+"/"+min_month+"/"+min_year)
+        //
+        var max_days = max_date.substring(dStartIndex,dEndIndex+1);
+        var max_month = max_date.substring(mStartIndex,mEndIndex+1);
+        var max_year = max_date.substring(yStartIndex,yEndIndex+1);
+        //alert("max : "+max_days+"/"+max_month+"/"+max_year)
+        //
+        var txt_Date = new Date(txtyear,txtmonth,txtdays);
+        var minDate = new Date(min_year,min_month,min_days);
+        var maxDate = new Date(max_year,max_month,max_days);
+        if(max_date!="" && min_date!="" && !(txt_Date>=minDate && txt_Date<=maxDate))//8.7
+        {
+			if(flag) //3.5
+			{
+				return false;
+			}
+            alert("Date entered should be between "+min_date+" and "+max_date);
+			txtField.value="";//4.8
+			txtField.focus();//4.8
+        }
+		else //3.5
+		{	//9.9 Starts
+			if(document.getElementById(txtField.id))
+			{
+				//document.getElementById(txtField.id).value = '';
+			}//9.9 Ends
+			return true;
+		}
+    }
+}
+//2.9 end
+
+//Manjiri Start - 10.6
+function setAmountFormat() {
+	var locale = 'en_US';
+	//alert('locale : '+locale);
+	if(locale.equalsIgnoreCase("en_US")) {
+		parent.amountSeparator=",";
+		parent.decimalSeparator=".";
+		//parent.decimalPosition="";
+		parent.amountLocaleFormat=",.";	
+	} else if(locale.equalsIgnoreCase("en_CA")) {
+		parent.amountSeparator=".";
+		parent.decimalSeparator=",";
+		//parent.decimalPosition="";
+		parent.amountLocaleFormat=".,";
+	} else if(locale.equalsIgnoreCase("fr_CA")) {
+		parent.amountSeparator=" ";
+		parent.decimalSeparator=",";
+		//parent.decimalPosition="";
+		parent.amountLocaleFormat=" ,";
+	} else if(locale.equalsIgnoreCase("fr_FR")) {
+		parent.amountSeparator=" ";
+		parent.decimalSeparator=",";
+		//parent.decimalPosition="";
+		parent.amountLocaleFormat=" ,";
+	
+	}
+
+	parent.useLocaleAmountFormat = true;
+	var localeAmountFormat = 'null';
+	if(localeAmountFormat != null) {
+		if(localeAmountFormat == 'Y') {
+			parent.useLocaleAmountFormat = true;
+		} else if (localeAmountFormat == 'N') {
+			parent.useLocaleAmountFormat = false;
+		}
+	}
+}
+//Manjiri End - 10.6
+</SCRIPT>
+<!-- <BODY class="body2" onkeyDown="parent.checkKeyPress(event);"> --><!-- 2.6 --><!--
+<BODY  onClick="hideOperators()" id="body2" class="body2" onkeyDown="parent.checkKeyPress(event);" style="margin: 0;padding: 0;" onload="loadEntityValues();"> <!-- 2.6 --><!-- 4.5 --><!-- 7.9 --><!--10.1-->
+<SCRIPT src="scripts//payments//PtOnload.js"></SCRIPT>
+
+<SCRIPT src="scripts//payments//ptMIFTValidate.js"></SCRIPT>
+
+<SCRIPT src="scripts//payments//IwMainScreen.js"></SCRIPT>
+</HEAD>
+<BODY onclick=hideOperators() id=body2 class=body2 onload=loadEntityValues(); onkeydown=parent.checkKeyPress(event); style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" oncontextmenu="return false;" onunload=CloseChildWindow();><!-- 2.6 --><!-- 4.5 --><!-- 7.9 --><!--10.1--><!-- 10.7 -->
+<DIV id=modal style="HEIGHT: 100%; WIDTH: 100%; BACKGROUND: #bbbbbb; POSITION: absolute; TEXT-ALIGN: center; LEFT: 0px; FILTER: Alpha(Opacity=80); Z-INDEX: 100; DISPLAY: none; TOP: 0px; opacity: .00">
+<TABLE style="HEIGHT: 100%; Z-INDEX: 101">
+<TBODY>
+<TR>
+<TD style="Z-INDEX: 9999; verticle-align: middle">
+<DIV style="BORDER-TOP: #054d7c 4px solid; HEIGHT: 30px; BORDER-RIGHT: #054d7c 4px solid; WIDTH: 200px; BACKGROUND: white; BORDER-BOTTOM: #054d7c 4px solid; PADDING-BOTTOM: 4px; TEXT-ALIGN: center; PADDING-TOP: 4px; PADDING-LEFT: 4px; FILTER: Alpha(Opacity=100); BORDER-LEFT: #054d7c 4px solid; PADDING-RIGHT: 4px; opacity: 100" ?>
+<DIV><IMG alt="" src="images/ajax-loader.gif"></DIV>
+<DIV><SPAN id=ajaxMsg style="COLOR: #054d7c">Loading Screen...</SPAN></DIV></DIV></TD></TD></TR></TBODY></TABLE></DIV>
+<DIV id=Loadingdlg style="VERTICAL-ALIGN: middle; TEXT-ALIGN: center; LEFT: 0px; DISPLAY: none; TOP: 0px" align=center><SPAN style="TEXT-ALIGN: center"><IMG id=dialogImgId src="images/Loader3.gif" align=middle></SPAN> </DIV><SPAN id=MiddleForm>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-4';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'queueid';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='0';
+                </SCRIPT>
+<INPUT id=-4 class=input type=hidden value=0 name=queueid jQuery1492605704306="2"></INPUT>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-6';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'stageid';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='0';
+                </SCRIPT>
+ <INPUT id=-6 class=input type=hidden value=0 name=stageid jQuery1492605704306="3"></INPUT>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-3';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'productname';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='FX%2BRate';
+                </SCRIPT>
+ <INPUT id=-3 class=input type=hidden value=FX+Rate name=productname jQuery1492605704306="4"></INPUT>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-35';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'WorkitemPriority';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='0';
+                </SCRIPT>
+ <INPUT id=-35 class=input type=hidden value=0 name=WorkitemPriority jQuery1492605704306="5"></INPUT>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-2';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'itemtypeid';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='254167283';
+                </SCRIPT>
+ <INPUT id=-2 class=input type=hidden value=254167283 name=itemtypeid jQuery1492605704306="6"></INPUT>
+<SCRIPT>
+                parent.arrTransactionAttributeIds[parent.intTransactionAttributeCount] =  '-34';
+                parent.arrTransactionAttributeNames[parent.intTransactionAttributeCount] = 'Status';               
+                parent.arrTransactionAttributeValues[parent.intTransactionAttributeCount++] ='Authorized';
+                </SCRIPT>
+ <INPUT id=-34 class=input type=hidden value=Authorized name=Status jQuery1492605704306="7"></INPUT> <INPUT id=-31 class=input type=hidden name=doctypeid jQuery1492605704306="8"></INPUT> <INPUT id=KeyValues class=input type=hidden value=Notional,CA001,CA,3,CAD,USD,; name=KeyValues jQuery1492605704306="9"></INPUT> <INPUT id=KeyColumns class=input type=hidden value=EX_RATE_TYPE,BRANCH_CODE,COUNTRY_CODE,ENTITYCODE,BASE_CCY_CODE,QUOTE_CCY_CODE, name=KeyColumns jQuery1492605704306="10"></INPUT> <INPUT id=RefBulkFlag class=input type=hidden value=N name=RefBulkFlag jQuery1492605704306="11"></INPUT>
+<SCRIPT>
+					document.getElementById('KeyValues').value='Notional,CA001,CA,3,CAD,USD,;';
+					document.getElementById('KeyColumns').value='EX_RATE_TYPE,BRANCH_CODE,COUNTRY_CODE,ENTITYCODE,BASE_CCY_CODE,QUOTE_CCY_CODE,';
+					document.getElementById('RefBulkFlag').value='N';	
+				//	alert('Notional,CA001,CA,3,CAD,USD,;');
+					//alert('EX_RATE_TYPE,BRANCH_CODE,COUNTRY_CODE,ENTITYCODE,BASE_CCY_CODE,QUOTE_CCY_CODE,');
+					
+
+			//8.3 Starts
+				//	var abcd = Ext.decode('{}');
+			//	var vMultilandFieldData = '{}';
+				//alert("vMultilandFieldData=="+vMultilandFieldData);
+
+				var jSONMultilangFieldDataObj = "";
+
+				if('{}' != "") {
+				var	jSONMultilangFieldDataObj = JSON.parse( '{}');
+
+				var paramName = "Value";
+				for(var obj in jSONMultilangFieldDataObj) {
+						mFieldName = new Array();
+						mFieldValue = new Array();
+						var mFieldCounter = 1;
+						var Count = 1;
+					for(var SubObj in jSONMultilangFieldDataObj[obj]) {
+							mFieldName[mFieldCounter] = paramName+'-LangCode'+Count;
+							mFieldValue[mFieldCounter++] = SubObj;
+
+							mFieldName[mFieldCounter] =  paramName+'-Count';
+							mFieldValue[mFieldCounter++] = 1;
+
+							mFieldName[mFieldCounter] = paramName+'-LangValue'+Count;						
+							mFieldValue[mFieldCounter++] = jSONMultilangFieldDataObj[obj][SubObj];
+						
+							mFieldName[0] = paramName+'-LangCount';
+							mFieldValue[0] = Number(Count+Number(1));
+
+							Count++;
+					}
+					populateMultilingualData(mFieldName,mFieldValue,"Value","Value",obj,"en_US","")//8.3
+				}
+				}
+				//8.3 Ends
+
+
+					</SCRIPT>
+ <!-- 10.4 Starts -->
+<SCRIPT> 				
+				parent.IwTopFrame.screenId = '534498285';	
+				</SCRIPT>
+<!-- 10.4 Ends -->
+<SCRIPT src="scripts//IwDateTime.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwAppFetchKey.js"></SCRIPT>
+
+<SCRIPT src="scripts//IwDataValidation.js"></SCRIPT>
+
+<SCRIPT>
+					var objFields;
+				</SCRIPT>
+
+<DIV id=P254167283 style="POSITION: absolute; VISIBILITY: visible">
+<FORM name=PForm254167283>
+<TABLE id=P254167283-TAB0 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR id=P254167283-TR8><INPUT disabled id=P254167283-MANDATORYFIELDS class=input readOnly type=hidden value=P254167283-303650799$$+$2$P254167283-$13$false$2$1$0$0,P254167283-476231331$$+$2$P254167283-$13$false$2$1$0$0,P254167283-562142630$$+$2$P254167283-$13$false$2$1$0$0,P254167283-541717855$$+$2$P254167283-$13$false$2$1$0$0,P254167283-282554249$$+$2$P254167283-$13$false$2$1$0$0, jQuery1492605704306="12"></TR>
+<TR id=P254167283-TR0>
+<TD id=P254167283-TD0></TD></TR></TBODY>
+</TABLE>
+<DIV id=expColDiv style="WIDTH: 100%; TEXT-ALIGN: right"><A onclick=expandAll(this,0) id=PEAL style="MARGIN-RIGHT: 10px" href="#">Expand All</A><A onclick=CollapseAll(this,0) id=PCAL style="MARGIN-RIGHT: 10px" href="#">Collapse All</A></DIV>
+<TABLE id=P254167283-TAB1 style="DISPLAY: block" width="100%" border=0>
+<TBODY>
+<TR id=P254167283-TR1>
+<TD id=P254167283-TD1 class=ez11 colSpan=5>
+<DIV onclick="setCollapsing('+',2,'P254167283-',13,false,2,null,null)" id=divi2 style="WIDTH: 100%; VERTICAL-ALIGN: middle; DISPLAY: none" name="ECHeader" MODE="E" TabId="0"><IMG onclick="setCollapsing('+',2,'P254167283-',13,false,2,null,null)" name=ECHeader src="images/plus.gif" align=left MODE="E" TabId="0"><SPAN style="HEIGHT: 100%; VERTICAL-ALIGN: top; MARGIN-LEFT: 8px">FX Rate</SPAN></DIV>
+<DIV onclick="setCollapsing('-',2,'P254167283-',13,false,2,null,null)" id=divis2 style="WIDTH: 100%; VERTICAL-ALIGN: middle; DISPLAY: block" name="ECHeader" MODE="C" TabId="0"><IMG onclick="setCollapsing('-',2,'P254167283-',13,false,2,null,null)" name=ECHeader src="images/WFMinus.gif" align=left MODE="C" TabId="0"><SPAN style="HEIGHT: 100%; VERTICAL-ALIGN: top; MARGIN-LEFT: 8px">FX Rate</SPAN></DIV></TD></TR>
+<TBODY>
+<TR id=P254167283-TR2>
+<TD id=P254167283-TD2 class=ez1 width="20%">Country Code<SUP><FONT class=grid_REDmandatory>*</FONT></SUP></TD>
+<TD id=P254167283-TD3 class=ez2 width="20%"><INPUT onclick=this.select(); onfocus=this.select(); disabled onblur='parent.bOB=true;fK("410693308$424549508"); parent.bOB=false;' id=P254167283-303650799 title="2 Character ISO country code" class="ST164 input" onkeydown='return searchPickList("P254167283-303650799",true,event,"single",50,50,0)' onselect=checkDocumentChange(this);parent.dC=true; size=17 type=TEXTBOX value=CA name="Search Picklist" jQuery1492605704306="13">&nbsp;&nbsp;<SPAN onclick='searchPickList("P254167283-303650799",false,event,"single",50,50,0)' class=ST168 style="CURSOR: pointer; DISPLAY: none">Search</SPAN> </TD>
+<TD id=P254167283-TD4 class=ez1 width="20%">Branch Code<SUP><FONT class=grid_REDmandatory>*</FONT></SUP></TD>
+<TD id=P254167283-TD5 class=ez2 width="40%" colSpan=2><SELECT onchange='checkDocumentChange(this);parent.dC=true;fK("424549508"); ' disabled id=P254167283-476231331 title="Branch Transit Number" class=ST164 onkeydown='return fnKeyDown("8",event);' style="WIDTH: 178px" name="Drop Down"><OPTION value=""></OPTION><OPTION value=000098>000098</OPTION><OPTION selected value=CA001>CA001</OPTION></SELECT> <SPAN id=P254167283-476231331-spnTip style="FONT-SIZE: 8pt; BORDER-TOP: gray 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: gray 1px solid; BACKGROUND: lightyellow; BORDER-BOTTOM: gray 1px solid; POSITION: absolute; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: gray 1px solid; PADDING-RIGHT: 2px; VISIBILITY: hidden"></SPAN></TD></TR>
+<TBODY>
+<TR id=P254167283-TR3>
+<TD id=P254167283-TD6 class=ez1 width="20%">Transfer Currency<SUP><FONT class=grid_REDmandatory>*</FONT></SUP></TD>
+<TD id=P254167283-TD7 class=ez2 width="20%">
+<SELECT onchange='checkDocumentChange(this);parent.dC=true;var iPC = 0;var aPD = new Array();aPD[iPC] = new Array();aPD[iPC][0]="No_Same_Currency";aPD[iPC][1] = new Array();aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-562142630";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONCHANGE";invokePlugins(aPD);' disabled id=P254167283-562142630 title="Payment Currency" class=ST164 onkeydown='return fnKeyDown("8",event);' style="WIDTH: 178px" name="Drop Down">
+<OPTION value=""></OPTION>
+<OPTION value=AUD>AUD</OPTION>
+<OPTION value=BBD>BBD</OPTION><OPTION value=BHD>BHD</OPTION><OPTION value=BSD>BSD</OPTION><OPTION value=CAD>CAD</OPTION><OPTION value=CDF>CDF</OPTION>
+<OPTION value=CHF>CHF</OPTION><OPTION value=CNH>CNH</OPTION><OPTION value=CNY>CNY</OPTION><OPTION value=CZK>CZK</OPTION>
+<OPTION value=DKK>DKK</OPTION><OPTION value=EUR>EUR</OPTION><OPTION value=FJD>FJD</OPTION><OPTION value=GBP>GBP</OPTION><OPTION value=HKD>HKD</OPTION>
+<OPTION value=HUF>HUF</OPTION><OPTION value=ILS>ILS</OPTION><OPTION value=INR>INR</OPTION><OPTION value=JMD>JMD</OPTION><OPTION value=JPY>JPY</OPTION>
+<OPTION value=KWD>KWD</OPTION><OPTION value=KYD>KYD</OPTION><OPTION value=LKR>LKR</OPTION><OPTION value=MXN>MXN</OPTION><OPTION value=NOK>NOK</OPTION>
+<OPTION value=NZD>NZD</OPTION><OPTION value=PGK>PGK</OPTION><OPTION value=PHP>PHP</OPTION><OPTION value=PKR>PKR</OPTION><OPTION value=PLN>PLN</OPTION>
+<OPTION value=SAR>SAR</OPTION><OPTION value=SBD>SBD</OPTION><OPTION value=SEK>SEK</OPTION><OPTION value=SGD>SGD</OPTION><OPTION value=THB>THB</OPTION>
+<OPTION value=TRY>TRY</OPTION><OPTION value=TTD>TTD</OPTION>
+<OPTION selected value=USD>USD</OPTION>
+<OPTION value=XCD>XCD</OPTION><OPTION value=ZAR>ZAR</OPTION>
+</SELECT> <SPAN id=P254167283-562142630-spnTip style="FONT-SIZE: 8pt; BORDER-TOP: gray 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: gray 1px solid; BACKGROUND: lightyellow; BORDER-BOTTOM: gray 1px solid; POSITION: absolute; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: gray 1px solid; PADDING-RIGHT: 2px; VISIBILITY: hidden"></SPAN></TD>
+<TD id=P254167283-TD8 class=ez1 width="20%">Debit Currency<SUP><FONT class=grid_REDmandatory>*</FONT></SUP></TD>
+<TD id=P254167283-TD9 class=ez2 width="40%" colSpan=2><SELECT onchange='checkDocumentChange(this);parent.dC=true;var iPC = 0;var aPD = new Array();aPD[iPC] = new Array();aPD[iPC][0]="No_Same_Currency";aPD[iPC][1] = new Array();aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-541717855";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONCHANGE";invokePlugins(aPD);' disabled id=P254167283-541717855 title="Debit Account Currency" class=ST164 onkeydown='return fnKeyDown("8",event);' style="WIDTH: 178px" name="Drop Down"><OPTION value=""></OPTION><OPTION value=AUD>AUD</OPTION><OPTION value=BBD>BBD</OPTION><OPTION value=BHD>BHD</OPTION><OPTION value=BSD>BSD</OPTION><OPTION selected value=CAD>CAD</OPTION><OPTION value=CDF>CDF</OPTION><OPTION value=CHF>CHF</OPTION><OPTION value=CNH>CNH</OPTION><OPTION value=CNY>CNY</OPTION><OPTION value=CZK>CZK</OPTION><OPTION value=DKK>DKK</OPTION><OPTION value=EUR>EUR</OPTION><OPTION value=FJD>FJD</OPTION><OPTION value=GBP>GBP</OPTION><OPTION value=HKD>HKD</OPTION><OPTION value=HUF>HUF</OPTION><OPTION value=ILS>ILS</OPTION><OPTION value=INR>INR</OPTION><OPTION value=JMD>JMD</OPTION><OPTION value=JPY>JPY</OPTION><OPTION value=KWD>KWD</OPTION><OPTION value=KYD>KYD</OPTION><OPTION value=LKR>LKR</OPTION><OPTION value=MXN>MXN</OPTION><OPTION value=NOK>NOK</OPTION><OPTION value=NZD>NZD</OPTION><OPTION value=PGK>PGK</OPTION><OPTION value=PHP>PHP</OPTION><OPTION value=PKR>PKR</OPTION><OPTION value=PLN>PLN</OPTION><OPTION value=SAR>SAR</OPTION><OPTION value=SBD>SBD</OPTION><OPTION value=SEK>SEK</OPTION><OPTION value=SGD>SGD</OPTION><OPTION value=THB>THB</OPTION><OPTION value=TRY>TRY</OPTION><OPTION value=TTD>TTD</OPTION><OPTION value=USD>USD</OPTION><OPTION value=XCD>XCD</OPTION><OPTION value=ZAR>ZAR</OPTION></SELECT> <SPAN id=P254167283-541717855-spnTip style="FONT-SIZE: 8pt; BORDER-TOP: gray 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: gray 1px solid; BACKGROUND: lightyellow; BORDER-BOTTOM: gray 1px solid; POSITION: absolute; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: gray 1px solid; PADDING-RIGHT: 2px; VISIBILITY: hidden"></SPAN></TD></TR>
+<TBODY>
+<TR id=P254167283-TR4>
+<TD id=P254167283-TD10 class=ez1 width="20%">Exchange Rate Type</TD>
+<TD id=P254167283-TD11 class=ez2 width="20%" colSpan=4>
+<SELECT onchange=checkDocumentChange(this);parent.dC=true; disabled id=P254167283-299115628 title="Cross currency Rate type" class=ST164 onkeydown='return fnKeyDown("8",event);' style="WIDTH: 178px" name="Drop Down">
+<OPTION value=""></OPTION>
+<OPTION selected value=Notional>Notional</OPTION>
+<OPTION value=STANDARD>Standard</OPTION></SELECT>
+ <SPAN id=P254167283-299115628-spnTip style="FONT-SIZE: 8pt; BORDER-TOP: gray 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: gray 1px solid; BACKGROUND: lightyellow; BORDER-BOTTOM: gray 1px solid; POSITION: absolute; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: gray 1px solid; PADDING-RIGHT: 2px; VISIBILITY: hidden"></SPAN>
+ </TD></TR>
+<TBODY>
+<TR id=P254167283-TR5>
+<TD id=P254167283-TD12 class=ez1 width="20%">Effective Date</TD>
+<TD id=P254167283-TD13 class=ez2 width="20%"><INPUT onchange='checkDocumentChange(this);parent.dC=true;dTV("yyyy-MM-dd ",this,"DATE","",false,this.value);validateDate("2017-04-04","2099-12-31","yyyy-MM-dd","P254167283-273196122",this);var iPC = 0;var aPD = new Array();aPD[iPC] = new Array();aPD[iPC][0]="DateCheck";aPD[iPC][1] = new Array();aPD[iPC][1][0] = "P254167283-273196122";aPD[iPC][1][1] = "P254167283-294256122";aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-273196122";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONCHANGE";invokePlugins(aPD);' disabled id=P254167283-273196122 title="Date from which the FX rate is active" class="ST164 input" onkeydown='if(event.keyCode == 13) return openCalendar("P254167283-273196122",event.ScreenX-200,event.ScreenY,"DATE","yyyy-MM-dd","","N",true,event,"","2017-04-04","2099-12-31")' readOnly size=8 type=TEXTBOX value=2016-05-31 name=Date$yyyy-MM-dd jQuery1492605704306="14">&nbsp;&nbsp;<SPAN onclick='openCalendar("P254167283-273196122",event.ScreenX-200,event.ScreenY,"DATE","yyyy-MM-dd","","N",false,event,"","2017-04-04","2099-12-31");' style="CURSOR: pointer"><IMG border=0 src="images/calendar.gif"></SPAN></TD>
+<TD id=P254167283-TD14 class=ez1 width="20%">Expiry Date</TD>
+<TD id=P254167283-TD15 class=ez2 width="40%" colSpan=2><INPUT onchange='checkDocumentChange(this);parent.dC=true;dTV("yyyy-MM-dd ",this,"DATE","",false,this.value);validateDate("2017-04-04","2099-12-31","yyyy-MM-dd","P254167283-294256122",this);var iPC = 0;var aPD = new Array();aPD[iPC] = new Array();aPD[iPC][0]="DateCheck";aPD[iPC][1] = new Array();aPD[iPC][1][0] = "P254167283-273196122";aPD[iPC][1][1] = "P254167283-294256122";aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-294256122";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONCHANGE";invokePlugins(aPD);' disabled id=P254167283-294256122 title="Expiry Date for the FX Rate" class="ST164 input" onkeydown='if(event.keyCode == 13) return openCalendar("P254167283-294256122",event.ScreenX-200,event.ScreenY,"DATE","yyyy-MM-dd","","N",true,event,"","2017-04-04","2099-12-31")' readOnly size=8 type=TEXTBOX value=1999-12-31 name=Date$yyyy-MM-dd jQuery1492605704306="15">&nbsp;&nbsp;<SPAN onclick='openCalendar("P254167283-294256122",event.ScreenX-200,event.ScreenY,"DATE","yyyy-MM-dd","","N",false,event,"","2017-04-04","2099-12-31");' style="CURSOR: pointer"><IMG border=0 src="images/calendar.gif"></SPAN></TD></TR>
+<TBODY>
+<TR id=P254167283-TR6>
+<TD id=P254167283-TD16 class=ez1 width="20%">FX Rate<SUP><FONT class=grid_REDmandatory>*</FONT></SUP></TD>
+<TD id=P254167283-TD17 class=ez2 width="20%" colSpan=3><INPUT onchange=checkDocumentChange(this);parent.dC=true; disabled onblur='parent.bOB=true;dCC("A",this,this.value); var dfStatus= vDT("Numeric",this,"","",false,this.value,"0","","null",0.0,0.0);if( dfStatus !=  false ){var iPC = 0;var aPD = new Array();aPD[iPC] = new Array();aPD[iPC][0]="Display_Offer_Rate";aPD[iPC][1] = new Array();aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-282554249";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONBLUR";aPD[iPC] = new Array();aPD[iPC][0]="Display_Bid_Rate";aPD[iPC][1] = new Array();aPD[iPC][1][0] = "P254167283-281260584";aPD[iPC][2] = "254167283";aPD[iPC][3] = "JAVASCRIPT";aPD[iPC][4] = "P254167283-282554249";aPD[iPC][5] = "payments/ptMasterValidate.js";aPD[iPC++][6] = "ONBLUR";invokePlugins(aPD);} else { return; }parent.bOB=false;' id=P254167283-282554249 title="This rate is midpoint of buy and sell rate" class="ST164 input" readOnly maxLength=13 size=30 type=TEXTBOX value=1.3318 name="Text Box" jQuery1492605704306="16"></TD></TR>
+<TBODY></TBODY>
+</TABLE>
+</TD></TR></TABLE>
+<TR id=P254167283-TR9><INPUT disabled id=P254167283-CONDID class=input readOnly type=hidden jQuery1492605704306="17"></TR><TR id=P254167283-TR10><INPUT disabled id=P254167283-BGRIDTABLEID class=input readOnly type=hidden value=, jQuery1492605704306="18"></TR><TR id=P254167283-TR11><INPUT disabled id=P254167283-GRIDMANDATORYDIVIDS class=input readOnly type=hidden jQuery1492605704306="19"></TR><TR id=P254167283-TR12><INPUT disabled id=P254167283-COLLAPSEVIEW class=input readOnly type=hidden jQuery1492605704306="20"></TR><TR id=P254167283-TR13><INPUT disabled id=P254167283-COLLAPSESECTIONVIEW class=input readOnly type=hidden jQuery1492605704306="21"></TR>
+<TR id=P254167283-TR14><INPUT disabled id=P254167283-EXPANDESECTIONVIEW class=input readOnly type=hidden jQuery1492605704306="22"></TR><TR id=P254167283-TR15><INPUT disabled id=P254167283-GRIDMNDINFO class=input readOnly type=hidden jQuery1492605704306="23"></TR><TR id=P254167283-TR16><INPUT disabled id=P254167283-535520977 class=input readOnly type=hidden name=PE_COM_DF_SEARCH_ENTITY_ID$N jQuery1492605704306="24"></TR>
+<SCRIPT>
+                            parent.strTransactionScreenPresent = 'Y';
+                        </SCRIPT>
+ </FORM></DIV>
+<SCRIPT src="scripts//IwGridData.js"></SCRIPT>
+<!-- Start 5.8 -->
+<SCRIPT> // 5.9 starts
+						parent.strProductId = 'P'+'254167283';
+						//start 8.9
+						var mId=parent.strProductId+'-MANDATORYFIELDS';
+						if(!"Enquiry".equals(strReqType)){//9.0
+						var mandatoryFIds=document.getElementById(mId).value;
+						var lStrMndFldIds='P254167283-282554249,P254167283-303650799,P254167283-476231331,P254167283-541717855,P254167283-562142630,'
+						seqMndfId =	getSeqMndFids(lStrMndFldIds,mandatoryFIds);
+						}
+						//end 8.9
+					</SCRIPT>
+<!-- ends 5.9 -->
+<SCRIPT src="scripts//payments/ptMasterValidate.js"></SCRIPT>
+<!-- End 5.8 -->
+<SCRIPT>
+				// 7.0 starts
+				parent.strCurrencyNames = 'USD,CAD';
+				parent.strCurrencyValues = 'US Dollar,CAD';
+				parent.strCurrencyExponents = '0,0';
+				// 7.0 ends
+                    parent.strTransactionImageAttached = 'N';
+                    parent.strAlwaysShowDocumentSpace = ''; // 2.0
+                    parent.strDisabledFields += ',P254167283-281344249,P254167283-272126031';
+                    // parent.mandatoryFields += 'P254167283-282554249,P254167283-303650799,P254167283-476231331,P254167283-541717855,P254167283-562142630'; //2.7//8.9
+                    parent.mandatoryFields=seqMndfId;//8.9
+                GridIds='';
+				//4.4 start
+				var tabIds = 'DEFAULTTAB';
+				var tab_TableIds = '1:E';
+				var gridTableIds = '';
+				var gridFieldIds = '';
+				//alert("tab_TableIds: "+tab_TableIds+" gridTableIds: "+gridTableIds);
+				if(tabIds!=null && tabIds!="")
+				{
+					populateTabVisitedFlag(tabIds,tab_TableIds,gridTableIds);
+				}
+				else
+				{
+					populateTableVisitedData(tab_TableIds,gridTableIds);
+				}
+				//4.4 end
+				//2.9 start
+				//c.mEndTime = new Date();
+				//alert("before Calling populateProductData "+c.getTimeDiff());
+				var c = new calcTime();
+				c.mStartTime = new Date();
+				//alert("calling populateProductData");
+                                populateProductData("254167283","FX+Rate","payments%2FptMasterValidate.js%2C$P254167283-299115628,PE_COM_DF_RATE_TYPE,Varchar2,EX_RATE_TYPE,,P254167283-TD11,,Exchange%2BRate%2BType,N,Notional%23,Notional%7E%7ENotional%23STANDARD%7E%7EStandard%23,,N,,,,,,,,,,,,,,,Y,,,N,,,,;P254167283-273196122,PE_REF_DF_RATE_EFF_DT,Date,RATE_EFF_DATE,,P254167283-TD13,,Effective%2BDate,null,31%252F05%252F2016%23,,,N,,,,ALL,FUTURE,,,,,,,,,,Y,2017-04-19,2099-12-31,N,,,,;P254167283-294256122,PE_REF_DF_RATE_EXP_DT,Date,RATE_EXPIRY_DATE,,P254167283-TD15,,Expiry%2BDate,null,31%252F12%252F1999%23,,,N,,,,ALL,FUTURE,,,,,,,,,,Y,2017-04-19,2099-12-31,N,,,,$","","","","0","","US Dollar,CAD","USD,CAD","0,0","P254167283-TD16,P254167283-TD2,P254167283-TD4,P254167283-TD8,P254167283-TD6,","P254167283-282554249,P254167283-303650799,P254167283-476231331,P254167283-541717855,P254167283-562142630,","","P254167283-303650799,P254167283-476231331,P254167283-562142630,P254167283-541717855,P254167283-299115628,","View",null,null,null,"P254167283-303650799,PE_REF_DF_RATE_COUNTRY,Varchar2,COUNTRY_CODE,,P254167283-TD3,,Country%2BCode,null,CA%23,,Country%2BCode%23Country%2BShort%2BName%23Country%2BLong%2BName%23,N,,,Y,,,,,,,,,,,,N,,,N,,;P254167283-476231331,PE_COM_DF_BRANCH_CODE_DD,Varchar2,BRANCH_CODE,,P254167283-TD5,,Branch%2BCode,N,CA001%23,000098%7E%7E000098%23CA001%7E%7ECA001%23,,N,,,,,,,,,,,,,,,Y,,,N,,,,;P254167283-562142630,PE_REF_DF_SWIFT_CCY_COD_QUOTE,Varchar2,QUOTE_CCY_CODE,,P254167283-TD7,,Transfer%2BCurrency,N,USD%23,AUD%23BBD%23BHD%23BSD%23CAD%23CDF%23CHF%23CNH%23CNY%23CZK%23DKK%23EUR%23FJD%23GBP%23HKD%23HUF%23ILS%23INR%23JMD%23JPY%23KWD%23KYD%23LKR%23MXN%23NOK%23NZD%23PGK%23PHP%23PKR%23PLN%23SAR%23SBD%23SEK%23SGD%23THB%23TRY%23TTD%23USD%23XCD%23ZAR%23,,N,,,,,,,,,,,,,,,Y,,,N,,,,;P254167283-541717855,PE_REF_DF_SWIFT_CCY_COD_BASE,Varchar2,BASE_CCY_CODE,,P254167283-TD9,,Debit%2BCurrency,N,CAD%23,AUD%23BBD%23BHD%23BSD%23CAD%23CDF%23CHF%23CNH%23CNY%23CZK%23DKK%23EUR%23FJD%23GBP%23HKD%23HUF%23ILS%23INR%23JMD%23JPY%23KWD%23KYD%23LKR%23MXN%23NOK%23NZD%23PGK%23PHP%23PKR%23PLN%23SAR%23SBD%23SEK%23SGD%23THB%23TRY%23TTD%23USD%23XCD%23ZAR%23,,N,,,,,,,,,,,,,,,Y,,,N,,,,;P254167283-282554249,PE_REF_DF_MID_RATE,Number,MID_RATE,,P254167283-TD17,,FX%2BRate,null,1.3318%23,,,N,,,,,,,,,,,,,,,Y,,,N,,,,","P254167283-535520977,PE_COM_DF_SEARCH_ENTITY_ID,Varchar2,,,null,,Entity%2BID,null,,,,N,,,Y,,,,,,,,,,,,N,,,N,,,,",""); // 1.8,2.6, 3.5 , 4.3,4.4, 4.7  // 5.5 //6.8//8.7
+				c.mEndTime = new Date();
+				//alert("populateProductData: "+c.getTimeDiff());
+				var c = new calcTime();
+				c.mStartTime = new Date();
+				//alert("called populateProductData");
+				// start 8.1
+				var strPopUpFieldData = '';
+				var strPopUpGridData = '';
+				// end 8.1
+				// start 8.4
+			
+				var popUpNameObj;				
+				</SCRIPT>
+
+<SCRIPT>
+				// end 8.4
+				updatePopupFieldDetails(); // 9.1
+				populateProductGridData('254167283','FX+Rate','','','','0','','US Dollar,CAD','USD,CAD','','0,0','P254167283-TD16,P254167283-TD2,P254167283-TD4,P254167283-TD8,P254167283-TD6,','P254167283-282554249,P254167283-303650799,P254167283-476231331,P254167283-541717855,P254167283-562142630,','',null); // 1.8,2.6, 4.3,4.4
+				
+				c.mEndTime = new Date();
+				//alert("populateProductGridData: "+c.getTimeDiff());
+			//	var c = new calcTime();
+			//	c.mStartTime = new Date();
+				//2.9 end
+				
+                </SCRIPT>
+
+<SCRIPT>
+                    var condVal='';
+                    //alert("condVal: "+condVal);
+                    populateProdDocCondDisabledArray('P','P254167283',condVal);
+                </SCRIPT>
+
+<SCRIPT>
+                    var docrefCount = 1;
+                </SCRIPT>
+</SPAN>
+<SCRIPT>
+    Mode = 'view';
+    strReqType = 'RefEntity' //3.1
+    //start 1.3
+    docrefid='';
+    documentId='null';
+	
+    documentorder='null';
+    strdocrefMapping='null';
+    //end 1.3
+    //Start 1.8
+    currencyName = 'USD,CAD';
+    currencyValue = 'US Dollar,CAD';
+    currencyExponent = '0,0';
+    //End 1.8
+    parent.currDate = '19/04/2017';
+    parent.mmmCurrDate = '19-Apr-17';
+	buildScreen();	
+//	c.mEndTime = new Date();
+//  alert("buildScreen:"+c.getTimeDiff());
+    if(parent.strDualDataFields != '')
+    {
+        dDE();
+    }
+    if(parent.strStageName=='DRAFT')//1.6
+    {
+        if(parent.status == 'MODIFY')
+            disableKeyFields();
+    }
+    booleanMiddleLoaded = true;
+    //var mDivLoader = parent.IwBottomFrame.document.getElementById('modal');
+    //mDivLoader.style.display = 'none';
+    //Start 2.2
+    if('null' != null) //7.6
+    {
+        var strTransactionAttribtueFormat = 'null'; //7.6
+        var arrTransactionAttribtueFormat = strTransactionAttribtueFormat.split("~^");
+        parent.strTransactionAttributeDateFormat = arrTransactionAttribtueFormat[0];
+        parent.strTransactionAttributeTimeFormat = arrTransactionAttribtueFormat[1];
+        parent.strTransactionAttributeDateTimeFormat = arrTransactionAttribtueFormat[2];
+    }
+	callOnloadFetchKey();
+    pluginLoad();
+    conditionalSH(); // for onload S/H Prem
+   
+    //End 2.2
+</SCRIPT>
+
+<TABLE id=OperatorsTable class=ST140 cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD id=OperatorsTD class=ST132 vAlign=top align=left></TD></TR></TBODY></TABLE>
+<!--4.5 starts  --><!--4.5 ends  -->
+</BODY></HTML>
